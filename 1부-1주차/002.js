@@ -12,4 +12,4 @@ console.log(arr);
 
 //splice 메서드 정리 array.splice(요소가 추가될 인덱스, 제거 개수, 추가할 원소)
 //splice는 원 배열에 저장됨. (새로운 배열 생성X)
-//https://www.notion.so/Array-Array-prototype-a882c2cad6a04c41ad65a3ca1da2bcd3
+//정리 노션 -> https://www.notion.so/Array-Array-prototype-a882c2cad6a04c41ad65a3ca1da2bcd3
