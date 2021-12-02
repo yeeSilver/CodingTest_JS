@@ -25,3 +25,19 @@
     if (x) {
       // 이 코드는 실행됨
     }
+
+// 비교연산자 중 '동등연산자(==)'
+// * 정의: 비교하는 두 값이 일치하면 true, 일치하지 않으면 true
+// 동등연산자(==) != 일치연산자(===)
+// 일치연산자는 type까지 동일할 때 true값을 반환
+
+NaN == true;
+//false
+1 == true;
+//true;
+0 == true;
+//false
+"" == true;
+//false
+undefined == true;
+//false
