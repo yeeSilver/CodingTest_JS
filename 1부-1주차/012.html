@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임캐릭터class</title>
+</head>
+<body>
+    <!-- 다음 소스코드에서 클래스를 작성하여 게임 캐릭터의 능력치와 '파이어볼'이 출력되게 만드시오.
+주어진 소스 코드를 수정해선 안됩니다. -->
+
+<!-- 
+    #클래스
+    ##JS 클래스 : 생성자 함수
+    * 함수 : 알고리즘 + 로직
+    * 클래스 : 연관있는 변수 + 함수를 팩킹하는 기술
+    ##클래스로 포장하는 이유?
+    * 객체 단위로 코드 그룹화 및 코드 재사용성을 사용하기 위함.
+    ##생성 방식
+    * 리터럴 방식
+    * 함수 방식
+    * 프로토타입 방식
+    ###초기값 설정
+    * Constructor(생성자) 이용하여 클래스 객체의 초기 값 설정
+    ** 클래스 내부에서 constructor는 1번만 사용 가능.
+
+
+ -->
+<script>
+    class Wizard{
+        constructor(health, mana, armor){
+            this.health = health;
+            this.mana = mana;
+            this.armor = armor;
+        }
+        attack() {
+            console.log('파이어볼');
+        }
+    }
+
+    const x = new Wizard(545, 210, 10);
+    console.log(x.health, x.mana, x.armor);
+    x.attack();
+
+
+    // 출력
+    // 545 210 10
+    // 파이어볼
+</script>
+</body>
+</html>

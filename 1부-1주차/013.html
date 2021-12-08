@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몇 번째 행성인가?</title>
+</head>
+<body>
+    <label for="num">입력:</label>
+    <input type="number" id="num">
+    <button type="button" onclick="solar()">클릭</button>
+    <p id="valueInput"></p> 
+    <script>
+        let solarSystem = new Array('수성', '금성', '지구', '화성', '목성', '토성','천왕성', '해왕성');
+        
+        function solar() {
+            let num = (document.getElementById("num").value) -1;
+            let result = solarSystem[num];
+            document.getElementById("valueInput").innerHTML = result; 
+        }
+        
+
+    </script>
+</body>
+</html>

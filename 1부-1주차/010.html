@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Tree</title>
+    
+</head>
+<body>
+    <label for="treeHeight">몇 층 트리를 원하시나요? </label>
+    <input type="number" id="treeHeight"> 
+    
+    <button type="button"  onclick="makeTree()"> 
+         확인하기 
+    </button> 
+    <script>
+        let tree=[];
+        function makeTree(){
+            let number = document.querySelector("#treeHeight").value;
+            let test=[];
+            for (let i=0; i<number; i++){
+                for(let j=0; j<=i; j++){
+                    test.push('*')
+                }
+                tree.push(test);
+                tree.push('\n');
+                test=[];
+            }
+            document.write(tree)
+            // printTree();
+        }
+
+        function printTree(){
+            for (i in tree){
+                
+            }
+        }
+
+    </script>
+</body>
+</html>
