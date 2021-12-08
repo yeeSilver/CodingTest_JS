@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>거꾸로 문제</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <p>나는 거꾸로만 말하지</p>
+        <label for="inputString"></label>
+        <input type="text" id="inputString" onkeyup="enterkey()">
+        <p id="result"></p>
+    </div>
+
+    <script>
+        
+        function enterkey() {
+            if (window.event.keyCode == 13) {
+                // 엔터키가 눌렸을 때
+                let inputString = document.querySelector('#inputString').value;
+                let i = inputString.length;
+                let result=[];
+                for (i; 0<=i; i--){
+                    result.push(inputString[i])
+                }
+                result=result.join('');
+                document.querySelector('#result').innerHTML=`${result}`
+            }
+        }
+
+        // 이 구문을 하나로 작성하면?
+        // let result = inputString.split('').reverse().join('');
+        // 문자열을 쪼개서 배열에 저장, 배열에서 순서를 뒤바꿈. 배열을 다시 문자열로 합침
+    </script>
+</body>
+</html>
